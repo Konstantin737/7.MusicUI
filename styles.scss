@@ -1,0 +1,1176 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+.fat {
+  font-size: 14px;
+}
+
+$MusicBox_width: 1120px;
+$PlayerDot: 60px;
+
+body {
+    background-image: url(images/body_background.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+  }
+
+.MusicBox {
+    width: 1120px;
+    margin: 60px auto auto auto;
+    display: inline-flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    position: relative;
+  }
+
+.MusicBox__Panel {
+    width: 1120px;
+    margin-top: 45px;
+    display: flex;
+    flex-flow: row wrap;
+    box-shadow: 0 3px 12 rgba(15, 15, 15, 0.4);
+  }
+  
+  .MusicBox__Panel_ModificatorPanel1 {
+    height: 380px;
+    flex-wrap: nowrap;
+  }
+  
+  .Triangle {
+    position: absolute;
+    border: 20px solid transparent;
+    border-left: 20px solid white;
+    left: 370px;
+    top: 100px;
+    z-index: 1;
+  }
+  
+  .Triangle_Modificator1 {
+    border: 5px solid transparent;
+    border-left: 8px solid rgba(255, 255, 255, 0.4);
+    left: 40px;
+    top: 23px;
+  }
+  
+  .Triangle_Modificator2 {
+    left: 135px;
+    top: 56px;
+  }
+  
+  .MusicBox__Panel_ModificatorPanel2 {
+    height: 150px;
+    box-shadow: none;
+  }
+  
+  .MusicBox__Panel_ModificatorPanel3 {
+    width: 440px;
+    height: 515px;
+  }
+  
+  .MusicBox__Panel_ModificatorPanel4 {
+    width: 180px;
+    height: 515px;
+  }
+  
+  .MusicBox__Panel_ModificatorPanel5 {
+    width: 400px;
+    height: 515px;
+  }
+  
+  .MusicBox__Panel_ModificatorPanel6 {
+    width: 440px;
+    height: 390px;
+  }
+  
+  .MusicBox__Panel_ModificatorPanel7 {
+    width: 625px;
+    height: 390px;
+  }
+  
+  .InBoxPanel {
+    background: rgba(92, 91, 91, 0.0);
+    display: flex;
+    position: relative;
+    height: auto;
+  }
+  
+  .InBoxPanel__Modificator1 {
+    width: 370px;
+    background-color: white;
+    background-size: cover;
+  }
+  
+  .InBoxPanel__Modificator2 {
+    width: 490px;
+    background-image: url(images/InBoxPanel2.jpg);
+    background-size: cover;
+  }
+  
+  .InBoxPanel__Modificator3 {
+    width: 260px;
+    display: block;
+  }
+  
+  .InBoxPanel__Modificator4 {
+    width: 185px;
+    background: none;
+  }
+  
+  .InBoxPanel__Modificator5 {
+    width: 935px;
+    box-shadow: 0 3px 12px rgba(15, 15, 15, 0.4);
+  }
+  
+  .InBoxPanel__Modificator6 {
+    width: 335px;
+    height: 445px;
+    background-image: url(images/InBoxPanel3.jpg);
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+  }
+  
+  .InBoxPanel__Modificator7 {
+    width: 335px;
+    height: 70px;
+    box-shadow: inset 0px 10px 10px -8px black;
+    background-color: #7a71b0;
+    justify-content: space-between;
+  }
+  
+  .InBoxPanel__Modificator8 {
+    width: 105px;
+    height: 515px;
+    position: absolute;
+    margin-left: 335px;
+    box-shadow: inset 10px 0px 10px -10px black;
+    flex-direction: column;
+  }
+  
+  .InBoxPanel__Modificator9 {
+    width: 180px;
+    height: 280px;
+    box-shadow: inset 0px 10px 0px 0px #5e58a0;
+    background-color: white;
+    flex-direction: column;
+    display: flex;
+  }
+  
+  .InBoxPanel__Modificator10 {
+    width: 180px;
+    height: 165px;
+    box-shadow: inset 0px 10px 30px -20px black;
+    background-color: white;
+    cursor: pointer;
+  }
+  
+  .InBoxPanel__Modificator11 {
+    width: 180px;
+    height: 70px;
+    box-shadow: inset 0px 10px 30px -20px black;
+    background-image: url(images/Buy.png);
+    background-size: cover;
+    cursor: pointer;
+  }
+  
+  .InBoxPanel__Modificator12 {
+    width: 400px;
+    height: 205px;
+    background-color: rgba(92, 91, 91, 0.0);
+  }
+  
+  .InBoxPanel__Modificator13 {
+    width: 400px;
+    height: 235px;
+    background-image: url(images/Graf.png);
+    background-size: cover;
+  }
+  
+  .InBoxPanel__Modificator14 {
+    width: 400px;
+    height: 75px;
+    background-color: white;
+  }
+  
+  .InBoxPanel__Modificator15 {
+    width: 440px;
+    height: 105px;
+    background-color: rgba(92, 91, 91, 0.2);
+  }
+  
+  .InBoxPanel__Modificator16 {
+    width: 440px;
+    height: 105px;
+    background-color: rgba(92, 91, 91, 0.2);
+  }
+  
+  .InBoxPanel__Modificator17 {
+    width: 440px;
+    height: 105px;
+    background-color: rgba(92, 91, 91, 0.2);
+  }
+  
+  .InBoxPanel__Modificator18 {
+    width: 440px;
+    height: 75px;
+    background-color: #dba828;
+    display: inline-flex;
+    box-shadow: inset 0px 10px 10px -10px black;
+  }
+  
+  .InBoxPanel__Modificator19 {
+    width: 625px;
+    height: 390px;
+    background-image: url(images/InBoxPanel4.jpg);
+    background-size: cover;
+    overflow: hidden;
+  }
+  
+  .Text {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: absolute;
+  }
+  
+  .Text_Mdificator1 {
+    font-size: 48px;
+    color: #603c62;
+    font-weight: bold;
+    line-height: 48px;
+    top: 50px;
+    left: 60px;
+  }
+  
+  .Text_Mdificator2 {
+    font-size: 26px;
+    color: #9b5659;
+    line-height: 26px;
+    top: 105px;
+    left: 63px;
+  }
+  
+  .Text_Mdificator3 {
+    width: 250px;
+    height: 100px;
+    font-size: 18px;
+    color: black;
+    line-height: 18px;
+    top: 160px;
+    left: 60px;
+  }
+  
+  .Text_Mdificator4 {
+    font-size: 16px;
+    color: #e5c24c;
+    line-height: 16px;
+    top: 320px;
+    left: 60px;
+  }
+  
+  .Text_Mdificator5 {
+    font-size: 18px;
+    color: white;
+    line-height: 18px;
+    top: 18px;
+    left: 60px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+  }
+  
+  .Text_Mdificator6 {
+    font-size: 36px;
+    color: white;
+    line-height: 36px;
+    left: 22px;
+    bottom: 26px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+  }
+  
+  .Text_Mdificator7 {
+    font-size: 32px;
+    color: #9b5659;
+    line-height: 32px;
+    top: 15px;
+    left: 15px;
+  }
+  
+  .Text_Mdificator8 {
+    font-size: 32px;
+    color: #9b5659;
+    line-height: 32px;
+    top: 47px;
+    left: 15px;
+  }
+  
+  .Text_Mdificator9 {
+    font-size: 14px;
+    color: #5d579f;
+    line-height: 16px;
+    top: 100px;
+    left: 15px;
+    font-weight: bolder;
+  }
+
+  .Text_Mdificator10 {
+    font-size: 26px;
+    color: white;
+    font-weight: bold;
+    line-height: 26px;
+    top: 30px;
+    left: 15px;
+  }
+
+  .Text_Mdificator11 {
+    font-size: 12px;
+    color: #e5c24c;
+    line-height: 12px;
+    font-weight: bold;
+    top: 62px;
+    left: 15px;
+  }
+
+  .Text_Mdificator12 {
+    font-size: 32px;
+    color: #9b5659;
+    line-height: 32px;
+    font-weight: bolder;
+    top: 40px;
+    left: 30px;
+  }
+
+  .Text_Mdificator13 {
+    font-size: 16px;
+    color: #9b5659;
+    line-height: 16px;
+    top: 70px;
+    left: 30px;
+  }
+
+  .Text_Mdificator14 {
+    font-size: 14px;
+    color: black;
+    line-height: 18px;
+    left: 50px;
+  }
+
+  .Text_Mdificator15 {
+    font-size: 40px;
+    color: #5e589e;
+    line-height: 40px;
+    top: 60px;
+    left: 55px;
+  }
+
+  .Text_Mdificator16 {
+    font-size: 80px;
+    color: #5e589e;
+    line-height: 80px;
+    font-weight: bold;
+    top: 25px;
+    left: 80px;
+  }
+
+  .Text_Mdificator17 {
+    font-size: 14px;
+    color: #9b5659;
+    line-height: 14px;
+    font-weight: bold;
+    top: 110px;
+    left: 45px;
+  }
+
+  .Text_Mdificator18 {
+    font-size: 35px;
+    color: white;
+    line-height: 35px;
+    top: 15px;
+    left: 60px;
+  }
+
+  .Text1 {
+    width: 180px;
+    height: auto;
+    font-size: 26px;
+    color: white;
+    font-weight: bold;
+    line-height: 26px;
+    margin-top: 25px;
+    margin-left: 40px;
+    display: block;
+    overflow-wrap: break-word;
+  }
+  .Text2 {
+    width: 180px;
+    height: auto;
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.3);
+    font-weight: bold;
+    line-height: 18px;
+    margin-left: 40px;
+    display: block;
+    overflow-wrap: break-word;
+  }
+
+  .Text3 {
+    width: 160px;
+    height: auto;
+    font-size: 26px;
+    line-height: 75px;
+    color: #6d4874;
+    font-weight: bold;
+    margin-left: 20px;
+    display: block;
+    overflow-wrap: break-word;
+  }
+
+  .Text4 {
+    width: 24px;
+    height: auto;
+    font-size: 40px;
+    line-height: 75px;
+    color: #a95e63;
+    font-weight: bold;
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  .Text5 {
+    height: auto;
+    font-size: 26px;
+    line-height: 75px;
+    color: #a95e63;
+    font-weight: bold;
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  .Text6 {
+    height: auto;
+    font-size: 10px;
+    color: #a95e63;
+    font-weight: bold;
+    display: block;
+  }
+
+  .Text6_Modificator {
+    margin-top: 26px;
+  }
+
+  .Text7 {
+    height: auto;
+    font-size: 22px;
+    color: white;
+    font-weight: bold;
+    line-height: 105px;
+    text-align: center;
+  }
+
+  .Text8 {
+    height: auto;
+    font-size: 12px;
+    color: #7f88b3;
+    font-weight: normal;
+    display: block;
+    margin-left: 5px;
+  }
+
+  .Text8_Modificator {
+    font-size: 20px;
+    margin-top: 30px;
+    color: #a35b5e;
+    font-weight: bold;
+  }
+
+  .Text9 {
+    height: auto;
+    font-size: 12px;
+    color: #d36690;
+    font-weight: bold;
+    margin: 50px auto auto 25px;
+  }
+
+.Icon {
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+    position: absolute;
+    cursor: pointer;
+}
+
+.Icon_Modificator1 {
+    background-image: url(images/icon1.png);
+    left: 140px;
+    bottom: 35px;
+}
+
+.Icon_Modificator2 {
+    background-image: url(images/icon2.png);
+    left: 215px;
+    bottom: 35px;
+}
+
+.Icon_Modificator3 {
+    background-image: url(images/icon3.png);
+    left: 255px;
+    bottom: 35px;
+}
+
+.Icon_Modificator4 {
+    background-image: url(images/icon4.png);
+    left: 290px;
+    bottom: 35px;
+}
+
+.Icon_Modificator5 {
+    width: 80px;
+    height: 80px;
+    background-image: url(images/icon5.png);
+    top: 10px;
+    left: 50px;
+}
+
+.Buttom-1 {
+    width: 260px;
+    height: 53px;
+    position: relative;
+    cursor: pointer;
+}
+
+.Buttom-1_Modificator1 {
+    background-color: rgba(255, 255, 255, 0.3);
+    margin-top: 1px;
+    box-shadow: inset 15px 0px 20px -20px black;
+    &:hover {
+        background-color: rgba(255, 255, 255, 0.4);
+    }
+    &:active {
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+}
+
+.Buttom-1_Modificator2 {
+    margin-top: 0;
+}
+
+.Panel1 {
+    height: auto;
+    display: inline-flex;
+    background-color: rgba(255, 255, 255, 0.3);
+    align-content: stretch;
+    width: 35px;
+}
+
+.Panel1_Modificator1 {
+    background-image: url(images/icon6.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    box-shadow: inset -17px 0px 20px -20px black;
+    &:hover {
+        background-color: rgba(255, 255, 255, 0.4);
+    }
+    &:active {
+        background-color: rgba(255, 255, 255, 0.3)
+    }
+}
+
+.Panel1_Modificator2 {
+    width: 865px;
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+.Panel1_Modificator3 {
+    background-image: url(images/icon7.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    box-shadow: inset 17px 0px 20px -20px black;
+    &:hover {
+        background-color: rgba(255, 255, 255, 0.4);
+    }
+    &:active {
+        background-color: rgba(255, 255, 255, 0.3);
+    }
+}
+
+.Panel1-innerBox {
+    width: 288px;
+    height: auto;
+    display: inline-flex;
+    cursor: pointer;
+  }
+  
+  .Panel1-innerBox1 {
+    width: 150px;
+    height: auto;
+    align-content: stretch;
+  }
+  
+  .Panel1-innerBox1__Modificator1 {
+    background-color: white;
+    position: relative;
+  }
+  
+  .Panel1-innerBox1__Modificator2 {
+    background-image: url(images/DNagiev.jpg);
+    background-size: cover;
+  }
+  
+  .Panel1-innerBox1__Modificator3 {
+    background-image: url(images/VeraB.jpeg);
+    background-size: cover;
+    background-position: center center;
+  }
+  
+  .Panel1-innerBox1__Modificator4 {
+    background-image: url(images/JB.jpg);
+    background-size: cover;
+    background-position: center center;
+  }
+  
+  .StarBox {
+    width: 100px;
+    height: 20px;
+    position: absolute;
+    display: inline-flex;
+    top: 120px;
+    left: 10px;
+  }
+  
+  .Star {
+    width: 20px;
+    height: 20px;
+    background-image: url(images/Star.png);
+    background-position: center center;
+  }
+  
+  .Star__Modificaror1 {
+    background-image: url(images/StarGrey.png);
+  }
+
+  .NamePanel {
+    width: 335px;
+    height: 100px;
+    background-image: url(images/InBoxPanel3.jpg);
+    background-size: 211%;
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    background-position-x: -186px;
+    filter: blur(5px);
+    margin-top: 345px;
+  }
+
+  .NamePanel1 {
+    position: absolute;
+    width: 335px;
+    height: 100px;
+    margin-top: 345px;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .PlayPanel {
+    width: 625px;
+    height: 70px;
+    background-image: url(images/InBoxPanel4.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    filter: blur(5px);
+    margin-top: 320px;
+  }
+
+  .PlayPanel1 {
+    position: absolute;
+    width: 625px;
+    height: 70px;
+    margin-top: 320px;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: inline-flex;
+  }
+
+  .InBoxPanelMod7 {
+    width: 110px;
+    height: 70px;
+    background-color: #877fb8;
+    box-shadow: inset 0px 10px 10px -8px black;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+      &:hover {
+        background-color: rgba(255, 255, 255, 0.4);
+    }
+    &:active {
+        background-color: rgba(255, 255, 255, 0.0);
+    }
+  }
+
+  .InBoxPanelMod7-icon {
+    width: 30px;
+    height: 30px;
+    margin: 10px auto 0px auto;
+    background-image: url(images/icon8.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  .InBoxPanelMod7-icon__Modificator1 {
+    background-image: url(images/icon9.png);
+    background-size: 85%;
+  }
+
+  .InBoxPanelMod7-icon__Modificator2 {
+    background-image: url(images/icon10.png);
+    background-size: 85%;
+  }
+
+  .InBoxPanelMod7-number {
+    width: 80px;
+    height: 20px;
+    margin: 0px auto 0px auto;
+    font-size: 18px;
+    color: white;
+    text-align: center;
+    line-height: 18px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  }
+
+  .InBoxPanelMod8 {
+    width: 105px;
+    height: 130px;
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: inset 10px 0px 10px -10px black;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+      &:hover {
+        background-color: rgba(255, 255, 255, 0.4);
+    }
+    &:active {
+        background-color: rgba(255, 255, 255, 0.0);
+    }
+  }
+
+  .InBoxPanelMod8__Modificator1 {
+    margin-top: 1px;
+  }
+
+  .InBoxPanelMod8-icon {
+    width: 50px;
+    height: 50px;
+    margin: 25px auto 0px auto;
+    background-image: url(images/Photos.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  .InBoxPanelMod8-icon__Modificator1 {
+    background-image: url(images/Profile.png);
+  }
+
+  .InBoxPanelMod8-icon__Modificator2 {
+    background-image: url(images/Music.png);
+  }
+
+  .InBoxPanelMod8-icon__Modificator3 {
+    background-image: url(images/Comments.png);
+  }
+
+  .InBoxPanelMod8-number {
+    width: 80px;
+    height: 20px;
+    margin: 0px auto 0px auto;
+    font-size: 18px;
+    color: white;
+    text-align: center;
+    line-height: 18px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  }
+
+  .RoundLine {
+    width: 180px;
+    height: 20px;
+    position: relative;
+    display: flex;
+  }
+
+  .RoundLine__Modificator {
+    margin-top: 135px;
+  }
+
+  .Round {
+    width: 10px;
+    height: 10px;
+    background-image: url(images/Round.png);
+    background-size: cover;
+    margin: auto 10px auto 30px;
+  }
+
+.RoundPlayer {
+  width: 170px;
+  height: 164px;
+  background-image: url(images/RoundPlayer.png);
+  background-size: cover;
+}
+
+.PlayerBox {
+  width: 229px;
+  height: 205px;
+}
+
+.PanelPlayer {
+  width: 180px;
+  height: 30px;
+  margin: 30px auto auto 35px;
+  display: inline-flex;
+  justify-content: space-between;
+}
+
+.PanelPlayer__icon {
+  height: 30px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  cursor: pointer;
+}
+
+.PanelPlayer__icon_Modificator1 {
+  width: 30px;
+  background-image: url(images/icon11.png);
+}
+
+.PanelPlayer__icon_Modificator2 {
+  width: 120px;
+  position: relative;
+}
+
+.PanelPlayer__icon_Modificator3 {
+  width: 30px;
+  background-image: url(images/icon12.png);
+  background-size: 65%;
+}
+
+.PlayerLine {
+  height: 3px;
+  position: absolute;
+  margin: 14px auto auto 5px;
+}
+
+.PlayerLine__Modificator1 {
+  width: 100px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.PlayerLine__Modificator2 {
+  width: 30px;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.PlayerLine__Modificator3 {
+  height: 9px;
+  width: 9px;
+  background-color: white;
+  border-radius: 50%;
+  margin-left: 35px;
+  margin-top: 11px;
+  cursor: pointer;
+}
+
+.ChatBox1 {
+  width: 60px;
+  height: 75px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.ChatScroll {
+  width: 60px;
+  height: 37px;
+  background-color: #f2cf57;
+  background-position: center center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #f2ce57c7;
+  }
+  &:active {
+    background-color: #f2cf57;
+  }
+}
+
+.ChatScroll_Up {
+  background-image: url(images/icon6-1.png);
+}
+
+.ChatScroll_Down {
+  background-image: url(images/icon7-1.png);
+}
+
+.ChatBox2 {
+  width: 200px;
+  height: 75px;
+}
+
+.ChatBox3 {
+  width: 60px;
+  height: 75px;
+}
+
+.ChatBox4 {
+  width: 80px;
+  height: 75px;
+}
+
+.PlayListNumber {
+  width: 70px;
+  height: 105px;
+  background-color: rgba(255, 255, 255, 0.3);
+  box-shadow: inset -17px 0px 20px -20px black;
+}
+
+.PlayListArtist {
+  width: 370px;
+  height: 105px;
+  background-color: white;
+  display: inline-flex;
+  cursor: pointer;
+  
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+  &:active {
+    background-color: white;
+  }
+}
+
+.PlayListArtist_Foto {
+  width: 89px;
+  height: 89px;
+  border-radius: 50%;
+  background-image: url(images/Shakira.jpg);
+  background-size: cover;
+  background-position: center center;
+  margin: 8px auto auto 15px;
+}
+
+.PlayListArtist_Name {
+  width: 170px;
+  height: 105px;
+}
+
+.PlayListArtist_Likes {
+  width: 80px;
+  height: 105px;
+  display: inline-flex;
+}
+
+.PlayListArtist_Likes_Number {
+  width: 50px;
+  height: 105px;
+}
+
+.PlayListArtist_Likes_Icon {
+  width: 15px;
+  height: 12px;
+  margin-top: 52px;
+  background-image: url(images/GreyHert.png);
+  background-size: cover;
+}
+
+.PlayListArtist_Foto_Modificator1 {
+  background-image: url(images/keti-perri.jpg);
+}
+
+.PlayListArtist_Foto_Modificator2 {
+  background-image: url(images/bjanka.jpg);
+}
+
+.PlayListArtist_Likes_Icon_Yellow {
+  background-image: url(images/YellowHert.png);
+  width: 19px;
+  height: 18px;
+  margin-top: 49px;
+  margin-left: -3px;
+  background-size: cover;
+}
+
+.Top3_Panel1 {
+  height: 75px;
+  width: 220px;
+  background-image: url(images/Top3Background.png);
+  background-size: cover;
+}
+
+.Top3_Panel2 {
+  height: 75px;
+  width: 110px;
+  background-color: #e8c64a;
+  cursor: pointer;
+}
+
+.Top3_Panel3 {
+  height: 75px;
+  width: 110px;
+  background-color: #e8c64a;
+  cursor: pointer;
+}
+
+.Top3_Panel-icon1 {
+  width: 30px;
+  height: 30px;
+  margin: 10px auto 0px auto;
+  background-image: url(images/WhiteVideos.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.Top3_Panel-icon2 {
+  width: 30px;
+  height: 30px;
+  margin: 10px auto 0px auto;
+  background-image: url(images/WhiteMusic.png);
+  background-size: 90%;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.Top3_Panel-name {
+  width: 80px;
+  height: 20px;
+  margin: 0px auto 0px auto;
+  font-size: 18px;
+  color: white;
+  text-align: center;
+  line-height: 18px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.show1 {
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.show2 {
+  background-image: url(images/YellowVideos.png);
+}
+
+.show3 {
+  background-image: url(images/YellowMusic.png);
+}
+
+.PlayPanel1_Block1 {
+  width: 30px;
+  height: 30px;
+  background-image: url(images/Pause.png);
+  background-size: 60%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin: auto 20px auto 20px;
+  cursor: pointer;
+}
+
+.PlayPanel1_Block2 {
+  font-size: 14px;
+  line-height: 70px;
+  color: white;
+  font-weight: bold;
+}
+
+.PlayerLine1 {
+  height: 3px;
+  position: absolute;
+  margin: 33px auto auto 15px;
+}
+
+.PlayPanel1_Block3 {
+  width: 300px;
+  height: 70px;
+}
+
+.PlayerLine1__Modificator1 {
+  width: 270px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.PlayerLine1__Modificator2 {
+  width: $PlayerDot;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.PlayerLine1__Modificator3 {
+  height: 12px;
+  width: 4px;
+  background-color: white;
+  margin-left: $PlayerDot + 15px;
+  margin-top: 28px;
+  cursor: pointer;
+}
+
+.PlayPanel1_Block4 {
+  font-size: 14px;
+  line-height: 70px;
+  color: white;
+  font-weight: bold;
+}
+
+.PanelPlayer2 {
+  width: 30px;
+  height: 30px;
+  margin: 20px auto auto 35px;
+  display: inline-flex;
+  justify-content: space-between;
+}
+
+.PanelPlayer2__icon {
+  height: 30px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  cursor: pointer;
+}
+
+.PanelPlayer2__icon_Modificator1 {
+  width: 30px;
+  background-image: url(images/icon11.png);
+}
+
+.PanelPlayer2__icon_Modificator2 {
+  width: 120px;
+  position: relative;
+}
+
+.PanelPlayer2__icon_Modificator3 {
+  width: 30px;
+  background-image: url(images/icon12.png);
+  background-size: 65%;
+}
+
+.PlayerLine2 {
+  height: 3px;
+  position: absolute;
+  margin: 35px auto auto 5px;
+}
+
+.PlayerLine2__Modificator1 {
+  width: 100px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.PlayerLine2__Modificator2 {
+  width: 30px;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.PlayerLine2__Modificator3 {
+  height: 9px;
+  width: 9px;
+  background-color: white;
+  border-radius: 50%;
+  margin-left: 35px;
+  margin-top: 32px;
+  cursor: pointer;
+}
